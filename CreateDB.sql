@@ -68,4 +68,18 @@ VALUES	(1, 123456)
         
 INSERT INTO sales_contracts(vin, customer_name, customer_email, total_price)
 VALUES	(175922, 'Billy Jenkins', 'billy@gmail.com', 34233.86);
+        
+INSERT INTO vehicles(vin, make, model, sold)
+VALUES	(1234, 'Yamaha', 'MT-07', TRUE)
+        , (5678, 'Honda', 'CB500X', TRUE)
+        , (1000, 'Honda', 'CBR1000RR', FALSE);
+        
+INSERT INTO inventory(dealership_id, vin)
+VALUES	(2, 1234)
+		, (2, 5678)
+		, (2, 1000);
+        
+INSERT INTO sales_contracts(vin, customer_name, customer_email, total_price)
+VALUES		(1234, 'Brad Egbert', 'brad@gmail.com', 8522.83)
+			, (5678, 'Scott Egbert', 'scott@aol.com', 7203.91);
 
