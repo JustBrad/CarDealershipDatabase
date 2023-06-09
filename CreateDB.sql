@@ -42,9 +42,6 @@ CREATE TABLE sales_contracts (
     FOREIGN KEY (vin) REFERENCES vehicles(vin)
 );
 
--- Auto increment starting at 101
-ALTER TABLE sales_contracts AUTO_INCREMENT = 101;
-
 -- --------------------- --
 -- Load Data into Tables --
 -- --------------------- --
@@ -54,7 +51,8 @@ VALUES  ('Elite Motors', '123 Apex Dr', '9725550918')
 		, ('Two Wheelers','456 Cycle Ln', '4695558829');
         
 INSERT INTO vehicles(vin, make, model, sold)
-VALUES	(183928, 'Toyota', 'Supra', FALSE)
+VALUES	(123456, 'Honda', 'Civic', TRUE)
+		, (183928, 'Toyota', 'Supra', FALSE)
         , (175922, 'Subaru', 'WRX STI', TRUE)
         , (112839, 'BMW', 'M4', FALSE)
         , (998472, 'Ford', 'Mustang', FALSE);
